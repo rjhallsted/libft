@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 13:16:09 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/18 14:17:42 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/18 14:56:39 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ void	ft_putnbr(int n)
 			ft_putchar('-');
 		}
 		ft_putchar((n % 10) + '0');
-		if (nb > 9)
+		if (n > 9)
 		{
 			ft_putnbr(n / 10);
 		}

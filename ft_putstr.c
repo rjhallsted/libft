@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 13:06:50 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/18 14:10:21 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/18 14:58:16 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	ft_putstr(char const *s)
 {
-	while (*str)
+	while (*s)
 	{
-		write(1, *str, 1);
-		str++;
+		write(1, s, 1);
+		s++;
 	}
 }

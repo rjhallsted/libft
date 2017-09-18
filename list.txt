@@ -6,9 +6,12 @@
      By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+          
                                                   +#+#+#+#+#+   +#+             
      Created: 2017/09/18 10:53:13 by rhallste          #+#    #+#               
-     Updated: 2017/09/18 14:33:02 by rhallste         ###   ########.fr         
+     Updated: 2017/09/18 15:04:15 by rhallste         ###   ########.fr         
                                                                                 
 ********************************************************************************
+
+- means written
+x means passes tests
 
 PART 1
 --------------
@@ -59,7 +62,7 @@ PART 2
 [] ft_strtrim
 [] ft_strsplit
 [] ft_itoa
-[-] ft_putchar
+[x] ft_putchar
 [-] ft_putstr
 [-] ft_putendl
 [-] ft_putnbr
