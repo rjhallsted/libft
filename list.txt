@@ -6,12 +6,13 @@
      By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+          
                                                   +#+#+#+#+#+   +#+             
      Created: 2017/09/18 10:53:13 by rhallste          #+#    #+#               
-     Updated: 2017/09/18 15:04:15 by rhallste         ###   ########.fr         
+     Updated: 2017/09/18 20:11:46 by rhallste         ###   ########.fr         
                                                                                 
 ********************************************************************************
 
 - means written
-x means passes tests
+x means passes my tests
+@ means passes others tests
 
 PART 1
 --------------
@@ -35,14 +36,14 @@ PART 1
 [] ft_strnstr
 [] ft_strcmp
 [] ft_strncmp
-[] ft_atoi
-[] ft_isalpha
-[] ft_isdigit
-[] ft_isalnum
-[] ft_isascii
-[] ft_isprint
-[] ft_toupper
-[] ft_tolower
+[-] ft_atoi
+[-] ft_isalpha
+[-] ft_isdigit
+[-] ft_isalnum
+[-] ft_isascii
+[-] ft_isprint
+[-] ft_toupper
+[-] ft_tolower
 
 PART 2
 ---------------
@@ -57,19 +58,20 @@ PART 2
 [] ft_strmapi
 [] ft_strequ
 [] ft_strnequ
-[] ft_strsbu
+[] ft_strsub
 [] ft_strjoin
 [] ft_strtrim
 [] ft_strsplit
 [] ft_itoa
 [x] ft_putchar
-[-] ft_putstr
-[-] ft_putendl
-[-] ft_putnbr
-[-] ft_putchar_fd
-[-] ft_putstr_fd
-[-] ft_putendl_fd
-[-] ft_putnbr_fd
+[x] ft_putstr
+[x] ft_putendl
+[x] ft_putnbr
+[x] ft_putchar_fd
+[x] ft_putstr_fd
+[x] ft_putendl_fd
+[x] ft_putnbr_fd
+
 
 BONUS
 ---------------

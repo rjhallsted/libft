@@ -1,34 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/18 13:16:09 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/18 14:56:39 by rhallste         ###   ########.fr       */
+/*   Created: 2017/09/18 13:10:44 by rhallste          #+#    #+#             */
+/*   Updated: 2017/09/18 20:44:46 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-void	ft_putnbr(int n)
+void	ft_putendl(char const *s)
 {
-	if (n == -2147483648)
-	{
-		ft_putstr("2147483648");
-	}
-	else
-	{
-		if (n < 0)
-		{
-			n *= -1;
-			ft_putchar('-');
-		}
-		ft_putchar((n % 10) + '0');
-		if (n > 9)
-		{
-			ft_putnbr(n / 10);
-		}
-	}
+	ft_putstr(s);
+	ft_putchar('\n');
 }
