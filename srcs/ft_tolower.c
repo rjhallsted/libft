@@ -6,13 +6,13 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 19:16:47 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/18 20:44:06 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/19 11:50:45 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
 	if (ft_isupper(c))
 	{

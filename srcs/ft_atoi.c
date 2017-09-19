@@ -6,13 +6,13 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 19:36:59 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/19 10:58:13 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/19 11:51:28 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-static int to_number(const char *str)
+static int	to_number(const char *str)
 {
 	int nb;
 
@@ -25,7 +25,7 @@ static int to_number(const char *str)
 	return (nb);
 }
 
-int ft_atoi(const char *str)
+int			ft_atoi(const char *str)
 {
 	while (ft_isspace(*str))
 		str++;
