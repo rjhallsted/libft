@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/19 12:07:47 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/19 16:08:02 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ int		ft_islower(int c);
 int		ft_isprint(int c);
 int		ft_isspace(int c);
 int		ft_isupper(int c);
+void	*ft_memalloc(size_t len);
+void	*ft_memset(void *b, int c, size_t len);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 void	ft_putchar(char c);
