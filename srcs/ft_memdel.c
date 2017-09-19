@@ -6,13 +6,13 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/19 16:16:47 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/19 16:25:43 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/19 16:32:47 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-void ft_memdel(void **ap)
+void	ft_memdel(void **ap)
 {
 	free(*ap);
 	*ap = NULL;

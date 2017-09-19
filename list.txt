@@ -6,7 +6,7 @@
      By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+          
                                                   +#+#+#+#+#+   +#+             
      Created: 2017/09/18 10:53:13 by rhallste          #+#    #+#               
-     Updated: 2017/09/19 16:17:56 by rhallste         ###   ########.fr         
+     Updated: 2017/09/19 16:30:41 by rhallste         ###   ########.fr         
                                                                                 
 ********************************************************************************
 
@@ -48,9 +48,9 @@ PART 1
 PART 2
 ---------------
 [x] ft_memalloc
-[-] ft_memdel
-[] ft_strnew
-[] ft_strdel
+[x] ft_memdel
+[-] ft_strnew
+[-] ft_strdel
 [] ft_ftrclr
 [] ft_striter
 [] ft_striteri

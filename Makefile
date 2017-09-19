@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/19 16:20:54 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/19 16:31:08 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -44,7 +44,9 @@ P2_SRCS		=	$(addprefix $(SRC_DIR)/,	\
 				ft_putnbr					\
 				ft_putnbr_fd				\
 				ft_putstr					\
-				ft_putstr_fd				)
+				ft_putstr_fd				\
+				ft_strdel					\
+				ft_strnew					)
 B_SRCS		=
 
 SRCS		=	$(addsuffix .c, $(P1_SRCS) $(P2_SRCS) $(B_SRCS))
