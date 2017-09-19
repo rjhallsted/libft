@@ -6,11 +6,11 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 19:38:26 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/18 20:43:04 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/19 10:42:38 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	isspace(int c)
+int	ft_isspace(int c)
 {
 	return (c == '\t' || c == '\n' || c == '\v' || c == '\r' || c == ' ');
 }
