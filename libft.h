@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/19 16:32:10 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/19 17:14:52 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,14 +35,21 @@ void	ft_putendl(char const *s);
 void	ft_putendl_fd(char const *s, int fd);
 void	ft_putnbr(int n);
 void	ft_putnbr_fd(int n, int fd);
-void	ft_putstr(const char *s);
+void	ft_putstr(char const *s);
 void	ft_putstr_fd(char const *s, int fd);
-int		ft_strcmp(const char *s1, const char *s2);
+int		ft_strcmp(char const *s1, const char *s2);
 char	*ft_strcpy(char *dst, const char *src);
+void	ft_strclr(char *s);
 void	ft_strdel(char **as);
+int		ft_strequ(char const *s1, char const *s2);
+void	ft_striter(char *s, void (*f)(char *));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+char 	*ft_strmap(char const *s, char (*f)(char));
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strnew(size_t size);
-size_t	ft_strlen(const char *s);
-int		ft_strncmp(const char *s1, const char *s2, size_t n);
-char	*ft_strncpy(char *dst, const char *src, size_t len);
+size_t	ft_strlen(char const *s);
+int		ft_strncmp(char const *s1, char const*s2, size_t n);
+char	*ft_strncpy(char *dst, char const *src, size_t len);
 
 #endif

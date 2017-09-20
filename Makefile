@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/19 16:31:08 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/19 17:15:27 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -45,7 +45,14 @@ P2_SRCS		=	$(addprefix $(SRC_DIR)/,	\
 				ft_putnbr_fd				\
 				ft_putstr					\
 				ft_putstr_fd				\
+				ft_strclr					\
 				ft_strdel					\
+				ft_strequ					\
+				ft_striter					\
+				ft_striteri					\
+				ft_strmap					\
+				ft_strmapi					\
+				ft_strnequ					\
 				ft_strnew					)
 B_SRCS		=
 
