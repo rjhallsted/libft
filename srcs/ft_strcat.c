@@ -1,27 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/19 19:38:12 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/19 19:46:24 by rhallste         ###   ########.fr       */
+/*   Created: 2017/09/20 08:54:58 by rhallste          #+#    #+#             */
+/*   Updated: 2017/09/20 08:58:13 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-
-int	memcmp(const void *s1, const void *s2, size_t n)
+char	*ft_strcat(char *s1, const char *s2)
 {
-	const char	*c1;
-	const char	*c2;
-	int			i;
+	char *tmp;
 
-	c1 = s1;
-	c2 = s2;
-	i = 0;
-	while (i < n && c1[i] == c2[i])
-		i++;
-	return (c1[i - 1] - c2[i - 1]);
+	tmp = s1;
+	while (*tmp)
+		tmp++;
+	while (*s2)
+		*tmp++ = *s2++;
+	*tmp = '\0';
+	return (tmp);
 }
