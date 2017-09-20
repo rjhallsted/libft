@@ -1,30 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strmap.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/19 17:00:22 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/19 18:39:51 by rhallste         ###   ########.fr       */
+/*   Created: 2017/09/19 18:33:51 by rhallste          #+#    #+#             */
+/*   Updated: 2017/09/19 18:37:18 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
 #include "../libft.h"
 
-char	*ft_strmap(char const *s, char (*f)(char))
+void	bzero(void *s, size_t n)
 {
-	int		len;
-	int		i;
-	char	*new;
+	char	*str;
+	size_t	i;
 
-	len = ft_strlen(s);
-	new = ft_strnew(len + 1);
+	str = s;
 	i = 0;
-	while (i < len)
-	{
-		new[i] = f(s[i]);
-		i++;
-	}
-	return (new);
+	while (i < n)
+		str[i++] = 0;
 }

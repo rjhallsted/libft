@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/19 17:14:52 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/19 18:37:48 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <string.h>
 
+void	ft_bzero(size_t n);
 int		ft_atoi(char const *str);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
@@ -41,10 +42,11 @@ int		ft_strcmp(char const *s1, const char *s2);
 char	*ft_strcpy(char *dst, const char *src);
 void	ft_strclr(char *s);
 void	ft_strdel(char **as);
+char	*ft_strdup(const char *s1);
 int		ft_strequ(char const *s1, char const *s2);
 void	ft_striter(char *s, void (*f)(char *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
-char 	*ft_strmap(char const *s, char (*f)(char));
+char	*ft_strmap(char const *s, char (*f)(char));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strnew(size_t size);

@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/19 17:15:27 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/19 18:36:39 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -17,6 +17,7 @@ CFLAGS		=	-Wall -Werror -Wextra
 
 SRC_DIR		= 	srcs
 P1_SRCS		=	$(addprefix $(SRC_DIR)/, 	\
+				ft_bzero					\
 				ft_atoi						\
 				ft_isalnum					\
 				ft_isalpha					\
@@ -31,6 +32,7 @@ P1_SRCS		=	$(addprefix $(SRC_DIR)/, 	\
 				ft_toupper					\
 				ft_strcmp					\
 				ft_strcpy					\
+				ft_strdup					\
 				ft_strlen					\
 				ft_strncmp					\
 				ft_strncpy					)
