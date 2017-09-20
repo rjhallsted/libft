@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/20 09:39:58 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/20 10:19:33 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -45,7 +45,9 @@ P1_SRCS		=	$(addprefix $(SRC_DIR)/, 	\
 				ft_strncat					\
 				ft_strncmp					\
 				ft_strncpy					\
-				ft_strrchr					)
+				ft_strnstr					\
+				ft_strrchr					\
+				ft_strstr					)
 P2_SRCS		=	$(addprefix $(SRC_DIR)/,	\
 				ft_memalloc					\
 				ft_memdel					\

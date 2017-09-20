@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/20 09:39:29 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/20 10:19:10 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,10 +58,12 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strncat(char *s1, const char *s2, size_t n);
 int		ft_strnequ(char const *s1, char const *s2, size_t n);
 char	*ft_strnew(size_t size);
+char	*ft_strnstr(const char *big, const char *little, size_t len);
 size_t	ft_strlcat(char *dst, const char *src, size_t size);
 size_t	ft_strlen(char const *s);
 int		ft_strncmp(char const *s1, char const*s2, size_t n);
 char	*ft_strncpy(char *dst, char const *src, size_t len);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_strstr(const char *big, const char *little);
 
 #endif
