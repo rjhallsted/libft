@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/20 10:19:10 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/20 10:51:21 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # include <string.h>
 
-void	ft_bzero(size_t n);
+void	ft_bzero(void *s, size_t n);
 int		ft_atoi(char const *str);
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
