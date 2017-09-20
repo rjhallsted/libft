@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/20 08:54:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/20 08:58:13 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/20 09:14:40 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,5 @@ char	*ft_strcat(char *s1, const char *s2)
 	while (*s2)
 		*tmp++ = *s2++;
 	*tmp = '\0';
-	return (tmp);
+	return (s1);
 }
