@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/19 18:50:28 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/19 19:45:10 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -28,7 +28,10 @@ P1_SRCS		=	$(addprefix $(SRC_DIR)/, 	\
 				ft_isprint					\
 				ft_isupper					\
 				ft_memccpy					\
+				ft_memchr					\
+				ft_memcmp					\
 				ft_memcpy					\
+				ft_memmove					\
 				ft_memset					\
 				ft_tolower					\
 				ft_toupper					\
