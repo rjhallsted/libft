@@ -6,7 +6,7 @@
      By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+          
                                                   +#+#+#+#+#+   +#+             
      Created: 2017/09/18 10:53:13 by rhallste          #+#    #+#               
-     Updated: 2017/09/20 16:38:05 by rhallste         ###   ########.fr         
+     Updated: 2017/09/20 18:13:26 by rhallste         ###   ########.fr         
                                                                                 
 ********************************************************************************
 
@@ -29,7 +29,7 @@ PART 1
 [x] ft_strncpy
 [x] ft_strcat
 [x] ft_strncat
-[-] ft_strlcat
+[x] ft_strlcat
 [-] ft_strchr
 [-] ft_strrchr
 [-] ft_strstr
