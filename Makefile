@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/20 10:19:33 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/21 10:05:58 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -78,12 +78,14 @@ all: $(NAME)
 $(OBJS): $(SRCS)
 
 $(NAME): $(OBJS)
-	ar rcs $(NAME) $(OBJS)
+	@ar rcs $(NAME) $(OBJS)
 
 clean:
-	rm -rf $(OBJS)
+	@rm -rf $(OBJS)
 
 fclean: clean
-	rm -rf $(NAME)
+	@rm -rf $(NAME)
 
 re: fclean all
+
+.SILENT: $(OBJS)
