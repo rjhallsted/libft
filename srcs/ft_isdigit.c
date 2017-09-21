@@ -6,11 +6,11 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 18:19:19 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/18 18:52:49 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/21 14:22:16 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
