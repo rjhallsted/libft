@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/19 18:47:11 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/19 18:53:44 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/21 10:37:42 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	{
 		dst_str[i] = src_str[i];
 		if (src_str[i] == c)
-			return ((void *)(src + i + 1));
+			return ((void *)(dst + i + 1));
 		else
 			i++;
 	}
