@@ -6,7 +6,7 @@
      By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+          
                                                   +#+#+#+#+#+   +#+             
      Created: 2017/09/18 10:53:13 by rhallste          #+#    #+#               
-     Updated: 2017/09/22 13:57:03 by rhallste         ###   ########.fr         
+     Updated: 2017/09/22 16:08:04 by rhallste         ###   ########.fr         
                                                                                 
 ********************************************************************************
 
@@ -55,9 +55,9 @@ PART 2
 [x] ft_striter
 [x] ft_striteri
 [x] ft_strmap
-[-] ft_strmapi
-[-] ft_strequ
-[-] ft_strnequ
+[x] ft_strmapi
+[x] ft_strequ
+[x] ft_strnequ
 [-] ft_strsub
 [-] ft_strjoin
 [-] ft_strtrim
