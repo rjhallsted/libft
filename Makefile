@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/22 09:54:22 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/22 10:07:10 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -15,9 +15,7 @@ NAME		= 	libft.a
 CC			=	gcc
 CFLAGS		=	-Wall -Werror -Wextra
 
-SRC_DIR		= 	srcs
-P1_SRCS		=	$(addprefix $(SRC_DIR)/, 	\
-				ft_bzero					\
+P1_SRCS		=	ft_bzero					\
 				ft_atoi						\
 				ft_isalnum					\
 				ft_isalpha					\
@@ -47,9 +45,8 @@ P1_SRCS		=	$(addprefix $(SRC_DIR)/, 	\
 				ft_strncpy					\
 				ft_strnstr					\
 				ft_strrchr					\
-				ft_strstr					)
-P2_SRCS		=	$(addprefix $(SRC_DIR)/,	\
-				ft_memalloc					\
+				ft_strstr					
+P2_SRCS		=	ft_memalloc					\
 				ft_memdel					\
 				ft_putchar					\
 				ft_putchar_fd				\
@@ -70,9 +67,8 @@ P2_SRCS		=	$(addprefix $(SRC_DIR)/,	\
 				ft_strnequ					\
 				ft_strnew					\
 				ft_strsub					\
-				ft_strtrim					)
-B_SRCS		=	$(addprefix $(SRC_DIR)/,	\
-				ft_min						)
+				ft_strtrim					
+B_SRCS		=	ft_min						
 
 SRCS		=	$(addsuffix .c, $(P1_SRCS) $(P2_SRCS) $(B_SRCS))
 OBJS		=	$(addsuffix .o, $(P1_SRCS) $(P2_SRCS) $(B_SRCS))
