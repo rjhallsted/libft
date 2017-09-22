@@ -11,7 +11,7 @@
 /* ************************************************************************** */
 
 #include <string.h>
-#include "../libft.h"
+#include "libft.h"
 
 char	**ft_strsplit(char const *s, char c)
 {
