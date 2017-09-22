@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/22 09:47:48 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/22 09:54:51 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/22 10:45:48 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ static int	isspace(char c)
 	return (c == ' ' || c == '\n' || c == '\t');
 }
 
-char	*ft_strtrim(char const *s)
+char		*ft_strtrim(char const *s)
 {
 	char			*new;
 	char			*start;
