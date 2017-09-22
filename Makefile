@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/21 12:24:04 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/22 09:42:48 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -64,10 +64,12 @@ P2_SRCS		=	$(addprefix $(SRC_DIR)/,	\
 				ft_strequ					\
 				ft_striter					\
 				ft_striteri					\
+				ft_strjoin					\
 				ft_strmap					\
 				ft_strmapi					\
 				ft_strnequ					\
-				ft_strnew					)
+				ft_strnew					\
+				ft_strsub					)
 B_SRCS		=	$(addprefix $(SRC_DIR)/,	\
 				ft_min						)
 
