@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/22 10:41:22 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/22 11:10:32 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -46,7 +46,8 @@ P1_SRCS		=	ft_bzero					\
 				ft_strnstr					\
 				ft_strrchr					\
 				ft_strstr					
-P2_SRCS		=	ft_memalloc					\
+P2_SRCS		=	ft_itoa						\
+				ft_memalloc					\
 				ft_memdel					\
 				ft_putchar					\
 				ft_putchar_fd				\

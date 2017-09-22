@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/22 10:41:06 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/22 11:10:12 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ int		ft_isdigit(int c);
 int		ft_islower(int c);
 int		ft_isprint(int c);
 int		ft_isspace(int c);
+char	*ft_itoa(int n);
 int		ft_isupper(int c);
 void	*ft_memalloc(size_t len);
 void	*ft_memchr(void const *s, int c, size_t n);
