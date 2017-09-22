@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/20 09:10:54 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/21 13:46:31 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/22 13:05:30 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,5 +39,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 		return ((size_t)(len + s));
 	}
 	else
-		return (size + (size_t)ft_strlen(src));
+		return (size + ft_strlen(src));
 }
