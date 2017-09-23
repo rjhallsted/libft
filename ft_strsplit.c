@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/22 10:03:06 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/22 13:58:30 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/22 19:23:02 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static int			word_length(char const *s, char c)
 	int i;
 
 	i = 0;
-	while (*s && *s != c)
+	while (s[i] && s[i] != c)
 		i++;
 	return (i);
 }

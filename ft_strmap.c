@@ -6,10 +6,11 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/19 17:00:22 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/19 18:39:51 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/22 19:33:46 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <string.h>
 #include "libft.h"
 
 char	*ft_strmap(char const *s, char (*f)(char))
@@ -19,7 +20,8 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	char	*new;
 
 	len = ft_strlen(s);
-	new = ft_strnew(len + 1);
+	if(!(new = ft_strnew(len + 1)))
+		return (NULL);
 	i = 0;
 	while (i < len)
 	{

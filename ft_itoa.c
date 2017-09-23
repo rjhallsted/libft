@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/22 10:47:04 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/22 11:11:34 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/22 19:41:19 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char		*ft_itoa(int n)
 	}
 	while (len > start)
 	{
-		new[len - 1] = n % 10;
+		new[len - 1] = (n % 10) + '0';
 		n /= 10;
 		len--;
 	}
