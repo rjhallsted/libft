@@ -6,7 +6,7 @@
      By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+          
                                                   +#+#+#+#+#+   +#+             
      Created: 2017/09/18 10:53:13 by rhallste          #+#    #+#               
-     Updated: 2017/09/22 19:43:43 by rhallste         ###   ########.fr         
+     Updated: 2017/09/22 20:20:18 by rhallste         ###   ########.fr         
                                                                                 
 ********************************************************************************
 
@@ -54,14 +54,14 @@ PART 2
 [@] ft_strclr
 [@] ft_striter
 [@] ft_striteri
-[x] ft_strmap
-[x] ft_strmapi
+[@] ft_strmap
+[@] ft_strmapi
 [@] ft_strequ
 [@] ft_strnequ
 [@] ft_strsub
 [@] ft_strjoin
-[x] ft_strtrim
-[x] ft_strsplit
+[@] ft_strtrim
+[@] ft_strsplit
 [@] ft_itoa
 [@] ft_putchar
 [@] ft_putstr
@@ -69,7 +69,7 @@ PART 2
 [@] ft_putnbr
 [@] ft_putchar_fd
 [@] ft_putstr_fd
-[x] ft_putendl_fd
+[@] ft_putendl_fd
 [@] ft_putnbr_fd
 
 
