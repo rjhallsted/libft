@@ -6,7 +6,7 @@
      By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+          
                                                   +#+#+#+#+#+   +#+             
      Created: 2017/09/18 10:53:13 by rhallste          #+#    #+#               
-     Updated: 2017/09/22 19:41:39 by rhallste         ###   ########.fr         
+     Updated: 2017/09/22 19:43:43 by rhallste         ###   ########.fr         
                                                                                 
 ********************************************************************************
 
@@ -47,30 +47,30 @@ PART 1
 
 PART 2
 ---------------
-[x] ft_memalloc
-[x] ft_memdel
-[x] ft_strnew
-[x] ft_strdel
-[x] ft_strclr
-[x] ft_striter
-[x] ft_striteri
+[@] ft_memalloc
+[@] ft_memdel
+[@] ft_strnew
+[@] ft_strdel
+[@] ft_strclr
+[@] ft_striter
+[@] ft_striteri
 [x] ft_strmap
 [x] ft_strmapi
-[x] ft_strequ
-[x] ft_strnequ
-[x] ft_strsub
-[x] ft_strjoin
+[@] ft_strequ
+[@] ft_strnequ
+[@] ft_strsub
+[@] ft_strjoin
 [x] ft_strtrim
 [x] ft_strsplit
-[x] ft_itoa
-[x] ft_putchar
-[x] ft_putstr
-[x] ft_putendl
-[x] ft_putnbr
-[x] ft_putchar_fd
-[x] ft_putstr_fd
+[@] ft_itoa
+[@] ft_putchar
+[@] ft_putstr
+[@] ft_putendl
+[@] ft_putnbr
+[@] ft_putchar_fd
+[@] ft_putstr_fd
 [x] ft_putendl_fd
-[x] ft_putnbr_fd
+[@] ft_putnbr_fd
 
 
 BONUS
