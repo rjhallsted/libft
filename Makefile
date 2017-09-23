@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/23 09:52:11 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/23 10:24:15 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -72,6 +72,8 @@ P2_SRCS		=	ft_itoa						\
 				ft_strtrim					
 B_SRCS		=	ft_max						\
 				ft_min						\
+				ft_lstadd					\
+				ft_lstdel					\
 				ft_lstdelone				\
 				ft_lstnew
 

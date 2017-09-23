@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/22 10:03:06 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/23 09:40:09 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/23 10:29:31 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static int			count_words(char const *s, char c)
 	return (i);
 }
 
-void				free_all(char ***words, int last_index)
+static void			free_all(char ***words, int last_index)
 {
 	while (last_index >= 0)
 	{
@@ -65,7 +65,7 @@ char				**ft_strsplit(char const *s, char c)
 
 	s = forward(s, c);
 	word_count = count_words(s, c);
-	if (!(words = (char **)malloc(sizeof(char *) * word_count)))
+	if (!(words = (char **)ft_memalloc(sizeof(char *) * (word_count + 1))))
 		return (NULL);
 	i = 0;
 	while (i < word_count)
@@ -79,5 +79,6 @@ char				**ft_strsplit(char const *s, char c)
 		s = forward(s + wlen, c);
 		i++;
 	}
+	words[word_count] = NULL;
 	return (words);
 }
