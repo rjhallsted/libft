@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/22 11:10:32 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/23 09:36:16 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -70,7 +70,9 @@ P2_SRCS		=	ft_itoa						\
 				ft_strsplit					\
 				ft_strsub					\
 				ft_strtrim					
-B_SRCS		=	ft_min						
+B_SRCS		=	ft_max						\
+				ft_min						\
+				ft_lstnew
 
 SRCS		=	$(addsuffix .c, $(P1_SRCS) $(P2_SRCS) $(B_SRCS))
 OBJS		=	$(addsuffix .o, $(P1_SRCS) $(P2_SRCS) $(B_SRCS))

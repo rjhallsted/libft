@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/22 11:10:12 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/23 09:35:57 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,13 @@
 # define LIBFT_H
 
 # include <string.h>
+
+typedef struct		s_list
+{
+	void			*content;
+	size_t			content_size;
+	struct s_list	*next;
+}					t_list;
 
 void	ft_bzero(void *s, size_t n);
 int		ft_atoi(char const *str);
@@ -26,6 +33,8 @@ int		ft_isprint(int c);
 int		ft_isspace(int c);
 char	*ft_itoa(int n);
 int		ft_isupper(int c);
+t_list	*ft_lstnew(void const *content, size_t content_size);
+int		ft_max(int a, int b);
 void	*ft_memalloc(size_t len);
 void	*ft_memchr(void const *s, int c, size_t n);
 void	*ft_memccpy(void *dds, void const *src, int c, size_t n);
