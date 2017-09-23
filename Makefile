@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/23 10:24:15 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/23 10:45:26 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -75,6 +75,8 @@ B_SRCS		=	ft_max						\
 				ft_lstadd					\
 				ft_lstdel					\
 				ft_lstdelone				\
+				ft_lstiter					\
+				ft_lstmap					\
 				ft_lstnew
 
 SRCS		=	$(addsuffix .c, $(P1_SRCS) $(P2_SRCS) $(B_SRCS))
