@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/19 16:28:44 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/19 16:31:44 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/23 22:42:23 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,6 @@
 
 void	ft_strdel(char **as)
 {
-	ft_memdel((void **)as);
+	if (as)
+		ft_memdel((void **)as);
 }

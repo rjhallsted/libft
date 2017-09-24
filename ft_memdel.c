@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/19 16:16:47 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/23 09:50:27 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/23 22:37:46 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 void	ft_memdel(void **ap)
 {
-	free(*ap);
+	if (*ap)
+		free(*ap);
 	*ap = NULL;
 }
