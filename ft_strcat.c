@@ -6,19 +6,13 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/20 08:54:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/20 09:14:40 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/25 13:06:57 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 char	*ft_strcat(char *s1, const char *s2)
 {
-	char *tmp;
-
-	tmp = s1;
-	while (*tmp)
-		tmp++;
-	while (*s2)
-		*tmp++ = *s2++;
-	*tmp = '\0';
-	return (s1);
+	return (ft_strncat(s1, s2, ft_strlen(s2)));
 }

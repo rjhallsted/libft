@@ -6,18 +6,16 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/19 11:42:17 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/23 22:29:47 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/25 13:14:52 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 int	ft_strcmp(const char *s1, const char *s2)
 {
-	while (*s1 && *s2 && *s1 == *s2)
-	{
-		s1++;
-		s2++;
-	}
-	if (*s1 == *s2)
-		return (0);
-	return (*(unsigned char *)s1 - *(unsigned char *)s2);
+	size_t len;
+
+	len = (size_t)ft_max(ft_strlen(s1), ft_strlen(s2));
+	return (ft_strncmp(s1, s2, len));
 }
