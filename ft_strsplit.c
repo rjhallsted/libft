@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/22 10:03:06 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/25 11:13:30 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/25 14:06:53 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,28 +21,20 @@ static char	*forward(char const *s, char c)
 	return ((char *)s);
 }
 
-static int	word_length(char const *s, char c)
-{
-	int i;
-
-	i = 0;
-	while (s[i] && s[i] != c)
-		i++;
-	return (i);
-}
-
 static int	count_prep_words(char *s, char c)
 {
 	int i;
 
 	i = 0;
-	while (*s)
+	while (s && *s)
 	{
-		s += word_length(s, c);
 		i++;
-		*s = '\0';
-		if (*(s + 1))
+		s = ft_strchr(s, c);
+		if (s)
+		{
+			*s = '\0';
 			s = forward(s + 1, c);
+		}
 	}
 	return (i);
 }
