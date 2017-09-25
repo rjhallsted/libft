@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/22 10:03:06 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/25 10:30:45 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/25 10:43:17 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,14 @@
 #include <stdlib.h>
 #include "libft.h"
 
-static char const	*forward(char const *s, char c)
+static char	*forward(char const *s, char c)
 {
 	while (*s && *s == c)
 		s++;
-	return (s);
+	return ((char *)s);
 }
 
-static int			word_length(char const *s, char c)
+static int	word_length(char const *s, char c)
 {
 	int i;
 
@@ -31,7 +31,7 @@ static int			word_length(char const *s, char c)
 	return (i);
 }
 
-static int			count_prep_words(char const *s, char c)
+static int	count_prep_words(char *s, char c)
 {
 	int i;
 
@@ -47,7 +47,7 @@ static int			count_prep_words(char const *s, char c)
 	return (i);
 }
 
-static void			free_all(char ***words, int last_index)
+static void	free_all(char ***words, int last_index)
 {
 	while (last_index >= 0)
 	{
@@ -58,14 +58,16 @@ static void			free_all(char ***words, int last_index)
 	*words = NULL;
 }
 
-char				**ft_strsplit(char const *s, char c)
+char		**ft_strsplit(char const *s, char c)
 {
 	char	**words;
 	char 	*tmp;
 	int		word_count;
 	int		i;
 
-	tmp = ft_strdup(forward(s, c));
+	if(!(tmp = ft_strdup(s)))
+		return (NULL);
+	tmp = forward(tmp, c);
 	word_count = count_prep_words(tmp, c);
 	if (!(words = (char **)ft_memalloc(sizeof(char *) * (word_count + 1))))
 		return (NULL);
@@ -77,7 +79,7 @@ char				**ft_strsplit(char const *s, char c)
 			free_all(&words, i - 1);
 			return (NULL);
 		}
-		if *(tmp + ft_strlen(tmp) + 1)
+		if (*(tmp + ft_strlen(tmp) + 1))
 			tmp = forward(tmp + ft_strlen(tmp) + 1, c);
 		i++;
 	}
