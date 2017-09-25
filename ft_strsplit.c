@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/22 10:03:06 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/23 23:02:32 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/25 10:30:45 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int			word_length(char const *s, char c)
 	return (i);
 }
 
-static int			count_words(char const *s, char c)
+static int			count_prep_words(char const *s, char c)
 {
 	int i;
 
@@ -40,7 +40,9 @@ static int			count_words(char const *s, char c)
 	{
 		s += word_length(s, c);
 		i++;
-		s = forward(s, c);
+		*s = '\0';
+		if (*(s + 1))
+			s = forward(s + 1, c);
 	}
 	return (i);
 }
@@ -59,24 +61,24 @@ static void			free_all(char ***words, int last_index)
 char				**ft_strsplit(char const *s, char c)
 {
 	char	**words;
+	char 	*tmp;
 	int		word_count;
 	int		i;
-	int		wlen;
 
-	s = forward(s, c);
-	word_count = count_words(s, c);
+	tmp = ft_strdup(forward(s, c));
+	word_count = count_prep_words(tmp, c);
 	if (!(words = (char **)ft_memalloc(sizeof(char *) * (word_count + 1))))
 		return (NULL);
 	i = 0;
 	while (i < word_count)
 	{
-		wlen = word_length(s, c);
-		if (!(words[i] = ft_strsub(s, 0, wlen)))
+		if (!(words[i] = ft_strdup(tmp)))
 		{
 			free_all(&words, i - 1);
 			return (NULL);
 		}
-		s = forward(s + wlen, c);
+		if *(tmp + ft_strlen(tmp) + 1)
+			tmp = forward(tmp + ft_strlen(tmp) + 1, c);
 		i++;
 	}
 	words[word_count] = NULL;
