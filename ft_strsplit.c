@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/22 10:03:06 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/25 10:57:40 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/25 11:13:30 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,7 +66,7 @@ char		**ft_strsplit(char const *s, char c)
 	int		word_count;
 	int		i;
 
-	if (!(tmp = ft_strdup(s)))
+	if (!s || !(tmp = ft_strdup(s)))
 		return (NULL);
 	tmp = forward(tmp, c);
 	word_count = count_prep_words(tmp, c);
