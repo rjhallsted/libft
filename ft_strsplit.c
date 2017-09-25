@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/22 10:03:06 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/25 10:43:17 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/25 10:56:06 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,8 @@ static void	free_all(char ***words, int last_index)
 {
 	while (last_index >= 0)
 	{
-		free(*words[last_index]);
+		free(*(words[last_index]));
+		*words[last_index] = NULL;
 		last_index--;
 	}
 	free(*words);
