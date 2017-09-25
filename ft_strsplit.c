@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/22 10:03:06 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/25 14:06:53 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/25 15:21:19 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,25 +21,22 @@ static char	*forward(char const *s, char c)
 	return ((char *)s);
 }
 
-static int	count_prep_words(char *s, char c)
+static int	count_words(char const *s, char c)
 {
 	int i;
 
 	i = 0;
 	while (s && *s)
 	{
-		i++;
+		s = forward(s, c);
+		if (*s)
+			i++;
 		s = ft_strchr(s, c);
-		if (s)
-		{
-			*s = '\0';
-			s = forward(s + 1, c);
-		}
 	}
 	return (i);
 }
 
-static void	free_all(char ***words, int last_index)
+static void	*free_all(char ***words, int last_index)
 {
 	while (last_index >= 0)
 	{
@@ -49,31 +46,30 @@ static void	free_all(char ***words, int last_index)
 	}
 	free(*words);
 	*words = NULL;
+	return (NULL);
 }
 
 char		**ft_strsplit(char const *s, char c)
 {
 	char	**words;
-	char	*tmp;
+	char	*next;
 	int		word_count;
 	int		i;
 
-	if (!s || !(tmp = ft_strdup(s)))
+	if (!s)
 		return (NULL);
-	tmp = forward(tmp, c);
-	word_count = count_prep_words(tmp, c);
+	word_count = count_words(s, c);
 	if (!(words = (char **)ft_memalloc(sizeof(char *) * (word_count + 1))))
 		return (NULL);
 	i = 0;
 	while (i < word_count)
 	{
-		if (!(words[i] = ft_strdup(tmp)))
-		{
-			free_all(&words, i - 1);
-			return (NULL);
-		}
-		if (*(tmp + ft_strlen(tmp) + 1))
-			tmp = forward(tmp + ft_strlen(tmp) + 1, c);
+		s = forward(s, c);
+		next = ft_strchr(s, c);
+		words[i] = (next) ? ft_strsub(s, 0, next - s) : ft_strdup(s);
+		if (!(words[i]))
+			return (free_all(&words, i - 1));
+		s = next;
 		i++;
 	}
 	words[word_count] = NULL;
