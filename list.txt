@@ -6,7 +6,7 @@
      By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+          
                                                   +#+#+#+#+#+   +#+             
      Created: 2017/09/18 10:53:13 by rhallste          #+#    #+#               
-     Updated: 2017/09/24 21:52:14 by rhallste         ###   ########.fr         
+     Updated: 2017/09/25 11:16:51 by rhallste         ###   ########.fr         
                                                                                 
 ********************************************************************************
 
@@ -62,7 +62,7 @@ PART 2
 [@] ft_strsub
 [@] ft_strjoin
 [@] ft_strtrim
-[x] ft_strsplit
+[@] ft_strsplit
 [@] ft_itoa
 [@] ft_putchar
 [@] ft_putstr
