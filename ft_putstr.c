@@ -6,17 +6,14 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 13:06:50 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/18 14:58:16 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/25 13:02:25 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include "libft.h"
 
 void	ft_putstr(char const *s)
 {
-	while (*s)
-	{
-		write(1, s, 1);
-		s++;
-	}
+	ft_putstr_fd(s, STDOUT_FILENO);
 }
