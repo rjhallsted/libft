@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/23 10:45:26 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/27 15:38:57 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -77,7 +77,8 @@ B_SRCS		=	ft_max						\
 				ft_lstdelone				\
 				ft_lstiter					\
 				ft_lstmap					\
-				ft_lstnew
+				ft_lstnew					\
+				ft_lst_remove_if			
 
 SRCS		=	$(addsuffix .c, $(P1_SRCS) $(P2_SRCS) $(B_SRCS))
 OBJS		=	$(addsuffix .o, $(P1_SRCS) $(P2_SRCS) $(B_SRCS))
