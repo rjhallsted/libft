@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/28 15:39:38 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/28 19:28:32 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/29 15:52:45 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,14 @@ t_list	*ft_lst_swap(t_list **lst_start, int fi, int si)
 	t_list	*tmp_next;
 	int		i;
 
+	if (fi == si)
+		return (*lst_start);
+	if (si < fi)
+	{
+		i = si;
+		si = fi;
+		fi = i;
+	}
 	start = *lst_start;
 	i = 0;
 	while (start && i < si)
