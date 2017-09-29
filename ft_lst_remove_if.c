@@ -6,14 +6,14 @@
 /*   By: exam <marvin@42.fr>                        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/26 10:35:16 by exam              #+#    #+#             */
-/*   Updated: 2017/09/27 15:40:47 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/29 16:30:31 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 #include "libft.h"
 
-void ft_lst_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
+void	ft_lst_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
 {
 	t_list *tmp;
 
@@ -24,7 +24,6 @@ void ft_lst_remove_if(t_list **begin_list, void *data_ref, int (*cmp)())
 		begin_list = &((*begin_list)->next);
 		free(tmp);
 	}
-
 	while ((*begin_list)->next)
 	{
 		if (cmp((*begin_list)->next->content, data_ref) == 0)

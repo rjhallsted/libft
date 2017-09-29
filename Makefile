@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/28 18:00:02 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/29 16:01:24 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -80,7 +80,8 @@ B_SRCS		=	ft_free_2d_array			\
 				ft_lstmap					\
 				ft_lstnew					\
 				ft_lst_remove_if			\
-				ft_lst_swap
+				ft_lst_swap					\
+				ft_swap
 
 SRCS		=	$(addsuffix .c, $(P1_SRCS) $(P2_SRCS) $(B_SRCS))
 OBJS		=	$(addsuffix .o, $(P1_SRCS) $(P2_SRCS) $(B_SRCS))

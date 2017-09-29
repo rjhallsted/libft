@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/28 17:59:47 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/29 16:25:00 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,8 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstiter(t_list *lst, void (*f)(t_list *));
-void				ft_lst_remove_if(t_list **begin_list, void *data_ref, int (*cmp)());
+void				ft_lst_remove_if(t_list **begin_list, void *data_ref,
+						int (*cmp)());
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *));
 t_list				*ft_lstnew(void const *content, size_t content_size);
 int					ft_max(int a, int b);
@@ -88,5 +89,6 @@ char				**ft_strsplit(char const *s, char c);
 char				*ft_strstr(char const *big, char const *little);
 char				*ft_strsub(char const *s1, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
+void				ft_swap(int *a, int *b);
 
 #endif
