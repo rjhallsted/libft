@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/29 16:25:00 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/29 22:07:26 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,12 @@ int					ft_isprint(int c);
 int					ft_isspace(int c);
 char				*ft_itoa(int n);
 int					ft_isupper(int c);
+t_list				*ft_lst_itemcpy(t_list *item);
 t_list				*ft_lst_swap(t_list **lst_start, int fi, int si);
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+t_list				*ft_lstdup(t_list *item);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *));
 void				ft_lst_remove_if(t_list **begin_list, void *data_ref,
 						int (*cmp)());

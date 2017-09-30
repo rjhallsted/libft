@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/29 16:01:24 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/29 22:08:56 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -73,14 +73,16 @@ P2_SRCS		=	ft_itoa						\
 B_SRCS		=	ft_free_2d_array			\
 				ft_max						\
 				ft_min						\
+				ft_lst_itemcpy				\
+				ft_lst_remove_if			\
+				ft_lst_swap					\
 				ft_lstadd					\
 				ft_lstdel					\
 				ft_lstdelone				\
+				ft_lstdup					\
 				ft_lstiter					\
 				ft_lstmap					\
 				ft_lstnew					\
-				ft_lst_remove_if			\
-				ft_lst_swap					\
 				ft_swap
 
 SRCS		=	$(addsuffix .c, $(P1_SRCS) $(P2_SRCS) $(B_SRCS))
