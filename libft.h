@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/29 22:07:26 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/09/30 00:19:51 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 t_list				*ft_lstdup(t_list *item);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *));
+size_t				ft_lstlen(t_list *item);
 void				ft_lst_remove_if(t_list **begin_list, void *data_ref,
 						int (*cmp)());
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *));

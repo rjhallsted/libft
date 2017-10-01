@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/09/29 22:08:56 by rhallste         ###   ########.fr        #
+#    Updated: 2017/09/30 00:20:14 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -81,6 +81,7 @@ B_SRCS		=	ft_free_2d_array			\
 				ft_lstdelone				\
 				ft_lstdup					\
 				ft_lstiter					\
+				ft_lstlen					\
 				ft_lstmap					\
 				ft_lstnew					\
 				ft_swap
