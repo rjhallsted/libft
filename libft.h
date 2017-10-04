@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/09/30 00:19:51 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/10/04 14:41:45 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,7 @@ void				*ft_memset(void *b, int c, size_t len);
 int					ft_min(int a, int b);
 int					ft_tolower(int c);
 int					ft_toupper(int c);
+int					ft_power(int base, int power);
 void				ft_putchar(char c);
 void				ft_putchar_fd(char c, int fd);
 void				ft_putendl(char const *s);
