@@ -6,14 +6,14 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/04 14:40:31 by rhallste          #+#    #+#             */
-/*   Updated: 2017/10/04 14:42:49 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/10/09 16:44:47 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_power(int base, int power)
 {
 	int i;
-	int	nb;	
+	int	nb;
 
 	i = 1;
 	nb = 1;
