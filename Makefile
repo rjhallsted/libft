@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/10/21 11:47:50 by rhallste         ###   ########.fr        #
+#    Updated: 2017/10/27 14:28:11 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -84,10 +84,11 @@ B_SRCS		=	ft_free_2d_array			\
 				ft_lstnew					\
 				ft_memrealloc				\
 				ft_power					\
-				ft_swap
+				ft_swap						\
+				get_next_line
 
-SRCS		=	$(addsuffix .c, $(P1_SRCS) $(P2_SRCS) $(B_SRCS))
-OBJS		=	$(addsuffix .o, $(P1_SRCS) $(P2_SRCS) $(B_SRCS))
+SRCS		=	$(addprefix src/, $(addsuffix .c, $(P1_SRCS) $(P2_SRCS) $(B_SRCS)))
+OBJS		=	$(addprefix src/, $(addsuffix .o, $(P1_SRCS) $(P2_SRCS) $(B_SRCS)))
 
 all: $(NAME)
 
