@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/10/27 14:28:11 by rhallste         ###   ########.fr        #
+#    Updated: 2017/10/27 16:30:02 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -70,7 +70,8 @@ P2_SRCS		=	ft_itoa						\
 				ft_strsplit					\
 				ft_strsub					\
 				ft_strtrim					
-B_SRCS		=	ft_free_2d_array			\
+B_SRCS		=	ft_arraylen					\
+				ft_free_2d_array			\
 				ft_lst_itemcpy				\
 				ft_lst_remove_if			\
 				ft_lst_swap					\

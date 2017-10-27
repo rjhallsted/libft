@@ -1,19 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_arraylen.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/19 11:54:10 by rhallste          #+#    #+#             */
-/*   Updated: 2017/10/27 16:40:39 by rhallste         ###   ########.fr       */
+/*   Created: 2017/10/27 16:21:10 by rhallste          #+#    #+#             */
+/*   Updated: 2017/10/27 16:44:26 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include "../inc/libft.h"
+/*
+** Assumes the argument 'array' is NULL-terminated. Otherwise, behavior
+** is undefined.
+*/
 
-size_t	ft_strlen(const char *s)
+#include <string.h>
+#include <stdlib.h>
+
+size_t	ft_arraylen(void *array)
 {
-	return (ft_arraylen((void *)s));
+	int i;
+
+	i = 0;
+	while (*(char *)(array + i))
+		i++;
+	return (i);
 }
