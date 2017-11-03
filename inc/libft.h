@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/10/27 16:29:24 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/11/03 14:00:51 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ typedef struct		s_list
 size_t				ft_arraylen(void *array);
 int					ft_atoi(char const *str);
 void				ft_bzero(void *s, size_t n);
+int					ft_digitcount(unsigned int n);
+int					ft_digitcount_base(unsigned int n, int base);
 void				ft_free_2d_array(void ***array, size_t size);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);

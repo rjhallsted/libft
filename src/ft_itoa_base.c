@@ -1,39 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_itoa_base.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/09/22 10:47:04 by rhallste          #+#    #+#             */
-/*   Updated: 2017/11/03 14:10:38 by rhallste         ###   ########.fr       */
+/*   Created: 2017/11/03 13:53:01 by rhallste          #+#    #+#             */
+/*   Updated: 2017/11/03 14:13:12 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../inc/libft.h"
 
-char		*ft_itoa(int n)
+char	*ft_itoa_base(int n, int base)
 {
 	char	*new;
+	char	base_key[17];
 	int		len;
-	int		start;
 
-	if (n == -2147483648)
-		return (ft_strdup("-2147483648"));
-	len = (n < 0) ? ft_digitcount(n * -1) + 1 : ft_digitcount(n);
+	if (base == 10)
+		return (ft_itoa(n));
+	base_key = "0123456789abcdef";
+	len = ft_digitcount_base(n, base);
 	if (!(new = ft_strnew(len)))
 		return (NULL);
-	start = (n < 0);
-	if (n < 0)
-	{
-		n *= -1;
-		new[0] = '-';
-	}
 	len--;
-	while (len >= start)
+	while (len >= 0)
 	{
-		new[len] = (n % 10) + '0';
-		n /= 10;
+		new[len] = base_key[n % base];
+		n /= base;
 		len--;
 	}
 	return (new);
