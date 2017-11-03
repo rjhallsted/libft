@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/11/03 14:00:51 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/11/03 14:33:14 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,7 @@ int					ft_islower(int c);
 int					ft_isprint(int c);
 int					ft_isspace(int c);
 char				*ft_itoa(int n);
+char				*ft_itoa_base(int n, int base);
 int					ft_isupper(int c);
 t_list				*ft_lst_itemcpy(t_list *item);
 t_list				*ft_lst_swap(t_list **lst_start, int fi, int si);

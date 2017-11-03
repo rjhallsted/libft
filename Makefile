@@ -6,7 +6,7 @@
 #    By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/09/18 09:37:14 by rhallste          #+#    #+#              #
-#    Updated: 2017/11/03 14:01:28 by rhallste         ###   ########.fr        #
+#    Updated: 2017/11/03 14:33:32 by rhallste         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -74,6 +74,7 @@ B_SRCS		=	ft_arraylen					\
 				ft_digitcount				\
 				ft_digitcount_base			\
 				ft_free_2d_array			\
+				ft_itoa_base				\
 				ft_lst_itemcpy				\
 				ft_lst_remove_if			\
 				ft_lst_swap					\

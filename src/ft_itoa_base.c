@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/03 13:53:01 by rhallste          #+#    #+#             */
-/*   Updated: 2017/11/03 14:13:12 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/11/03 14:34:14 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char	*ft_itoa_base(int n, int base)
 {
 	char	*new;
-	char	base_key[17];
+	char	*base_key;
 	int		len;
 
 	if (base == 10)
