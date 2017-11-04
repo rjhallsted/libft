@@ -6,7 +6,7 @@
 /*   By: rhallste <rhallste@student.42.us.org>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/09/18 11:31:58 by rhallste          #+#    #+#             */
-/*   Updated: 2017/11/03 14:33:14 by rhallste         ###   ########.fr       */
+/*   Updated: 2017/11/04 12:02:02 by rhallste         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ typedef struct		s_list
 # define MIN(a, b) ((a < b) ? a : b)
 # define MAX(a, b) ((a > b) ? a : b)
 
-size_t				ft_arraylen(void *array);
 int					ft_atoi(char const *str);
 void				ft_bzero(void *s, size_t n);
 int					ft_digitcount(unsigned int n);
